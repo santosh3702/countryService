@@ -4,9 +4,9 @@ import com.countryservice.model.Country;
 
 public interface CountryService {
 	
-	public Country getCountry(int contryCode);
+	public String getCountry(int contryCode);
 	
-	public String addCountry(Country country);
+	public String addCountry(String country);
 	
 	public int getContrycodeByName(String countryName);
 	

@@ -4,7 +4,7 @@ import com.countryservice.model.Country;
 
 public interface CountryServiceDAO {
 	
-	public Country getCountry(int contryCode);
+	public String getCountry(int contryCode);
 	
 	public String addCountry(Country country);
 	

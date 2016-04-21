@@ -14,9 +14,9 @@ public class CountryServiceImpl implements CountryService {
 	@Autowired
 	private CountryServiceDAO countryServiceDAO;
 	
-	public Country getCountry(int contryCode) {
-		// TODO Auto-generated method stub
-		return null;
+	public String getCountry(int contryCode) {
+		String countryName = countryServiceDAO.getCountry(contryCode);
+		return countryName;
 	}
 
 	public String addCountry(Country country) {
